@@ -18,7 +18,7 @@
           <div class="nav-links">
             <ul>
               <li>Home</li>
-              <li>About Us</li>
+              <li>Operations</li>
               <li>Contact</li>
               <button class="btn-primary-navbar">Open account</button>
             </ul>
@@ -26,6 +26,47 @@
         </nav>
       </div>
     </div>
+
+    <section class="modal-section">
+      <div class="modal modal-active">
+        <p class="modal-close-btn">X</p>
+        <div class="modal-content signup-content modal-content-active">
+          <h1>Sign Up</h1>
+          <form method="post">
+            <div class="txt_field">
+              <input type="email" class="login-input" required />
+              <label for="">Email</label>
+            </div>
+            <div class="txt_field">
+              <input type="password" class="login-input" required />
+              <label for="">Password</label>
+            </div>
+            <div class="txt_field">
+              <input type="password" class="login-input" required />
+              <label for="">Confirm password</label>
+            </div>
+          </form>
+          <button class="btn-primary">Create account</button>
+          <a href="#" class="signin-link">I have an account</a>
+        </div>
+        <div class="modal-content signin-content">
+          <h1>Sign In</h1>
+          <form method="post">
+            <div class="txt_field">
+              <input type="email" class="login-input" required />
+              <label for="">Email</label>
+            </div>
+            <div class="txt_field">
+              <input type="password" class="login-input" required />
+              <label for="">Password</label>
+            </div>
+          </form>
+          <button class="btn-primary">Create account</button>
+          <a href="#" class="signup-link">Create account</a>
+        </div>
+      </div>
+      <div class="overlay"></div>
+    </section>
 
     <section class="section-banner">
       <div class="banner">
@@ -70,64 +111,66 @@
       </div>
     </section>
 
-    <section class="section-tabs">
+    <section class="section-tabs reveal">
       <div class="container">
         <div class="tabs">
           <div class="section-title">
             <span><strong>OPERATIONS</strong></span>
             <h5>Everything as simple as possible, but no simpler.</h5>
           </div>
-          <div class="tabs-btns">
-            <button
-              class="btn-primary btn-tab btn-tab-1 btn-tab-active"
-              data-tab="1"
-            >
-              Simple Solutions
-            </button>
-            <button class="btn-yellow btn-tab btn-tab-2" data-tab="2">
-              Simple Solutions
-            </button>
-            <button class="btn-blue btn-tab btn-tab-3" data-tab="3">
-              Simple Solutions
-            </button>
-          </div>
-          <div class="tabs-content">
-            <div class="content-tab content-tab-1 content-active">
-              <span>Transfer money to anyone, anywhere, instantly!</span>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Architecto facilis corporis nobis placeat recusandae itaque
-                quisquam odio vitae, asperiores eius cumque laboriosam non
-                debitis aperiam expedita rem repudiandae doloremque unde?
-              </p>
-            </div>
-            <div class="content-tab content-tab-2">
-              <span>Buy a home or make your dreams come true!</span>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem,
-                velit. Quidem saepe iste, aperiam deleniti, expedita eveniet
-                alias error molestias amet fugit illo architecto, tempora animi
-                cumque nam earum vitae!
-              </p>
-            </div>
-            <div class="content-tab content-tab-3">
-              <span
-                >No longer need your account? No problem! Close it
-                instantly.</span
+          <div class="reveal">
+            <div class="tabs-btns">
+              <button
+                class="btn-primary btn-tab btn-tab-1 btn-tab-active"
+                data-tab="1"
               >
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione
-                animi consequatur, impedit at sapiente corporis molestiae
-                laboriosam saepe aliquam quia accusantium id beatae mollitia
-                similique tenetur, veritatis placeat non illo.
-              </p>
+                Simple Solutions
+              </button>
+              <button class="btn-yellow btn-tab btn-tab-2" data-tab="2">
+                Simple Solutions
+              </button>
+              <button class="btn-blue btn-tab btn-tab-3" data-tab="3">
+                Simple Solutions
+              </button>
+            </div>
+            <div class="tabs-content">
+              <div class="content-tab content-tab-1 content-active">
+                <span>Transfer money to anyone, anywhere, instantly!</span>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Architecto facilis corporis nobis placeat recusandae itaque
+                  quisquam odio vitae, asperiores eius cumque laboriosam non
+                  debitis aperiam expedita rem repudiandae doloremque unde?
+                </p>
+              </div>
+              <div class="content-tab content-tab-2">
+                <span>Buy a home or make your dreams come true!</span>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Quidem, velit. Quidem saepe iste, aperiam deleniti, expedita
+                  eveniet alias error molestias amet fugit illo architecto,
+                  tempora animi cumque nam earum vitae!
+                </p>
+              </div>
+              <div class="content-tab content-tab-3">
+                <span
+                  >No longer need your account? No problem! Close it
+                  instantly.</span
+                >
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Ratione animi consequatur, impedit at sapiente corporis
+                  molestiae laboriosam saepe aliquam quia accusantium id beatae
+                  mollitia similique tenetur, veritatis placeat non illo.
+                </p>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="section-tabs">
+    <section class="section-tabs reveal">
       <div class="container">
         <div class="tabs">
           <div class="section-title">
@@ -138,7 +181,7 @@
       </div>
     </section>
 
-    <section class="section-contact">
+    <section class="section-contact reveal">
       <div class="container">
         <div class="contact-content">
           <div class="contact-content-img">
