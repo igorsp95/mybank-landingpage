@@ -92,3 +92,45 @@ function reveal() {
     }
   }
 }
+
+////// COUNTER ///////
+
+const counters = document.querySelectorAll(".count-number");
+
+counters.forEach((counter) => {
+  counter.innerText = "0";
+
+  const updateCounter = () => {
+    const target = +counter.getAttribute("data-target");
+    const c = +counter.innerText;
+
+    const increment = target / 300;
+
+    if (c < target) {
+      counter.innerText = `${Math.ceil(c + increment)}`;
+      setTimeout(updateCounter, 10);
+    }
+  };
+  updateCounter();
+});
+
+////// SCROLL TO ///////
+
+const scrollToOperations = document.querySelectorAll(".operations-btn");
+const sectionTabs = document.querySelector(".section-tabs");
+
+console.log(scrollToOperations);
+
+scrollToOperations.forEach((sto) =>
+  sto.addEventListener("click", () => {
+    sectionTabs.scrollIntoView({ behavior: "smooth" });
+  })
+);
+
+const scrollToContact = document.querySelector(".contact-btn");
+const sectionContact = document.querySelector(".section-contact");
+
+scrollToContact.addEventListener("click", () => {
+  sectionContact.scrollIntoView({ behavior: "smooth" });
+  console.log("click");
+});

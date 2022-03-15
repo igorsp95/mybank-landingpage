@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v6.0.0/css/all.css"
+    />
     <script src="script.js" defer></script>
     <title>MyBank</title>
     <link rel="stylesheet" href="style.css" />
@@ -13,13 +17,13 @@
       <div class="container">
         <nav>
           <div class="nav-logo">
+            <i class="fa-solid fa-coins"></i>
             <p>MyBank</p>
           </div>
           <div class="nav-links">
             <ul>
-              <li>Home</li>
-              <li>Operations</li>
-              <li>Contact</li>
+              <li><a class="operations-btn">Operations</a></li>
+              <li><a class="contact-btn">Contact</a></li>
               <button class="btn-primary-navbar">Open account</button>
             </ul>
           </div>
@@ -61,7 +65,7 @@
               <label for="">Password</label>
             </div>
           </form>
-          <button class="btn-primary">Create account</button>
+          <button class="btn-primary">Sign in</button>
           <a href="#" class="signup-link">Create account</a>
         </div>
       </div>
@@ -74,14 +78,10 @@
           <div class="info">
             <div class="info-text-banner">
               <h1>
-                Le Wagon brings <strong>tech skills</strong> to
-                <strong>creative people</strong>!
+                When <strong>banking</strong> meets <strong>minimalist</strong>!
               </h1>
-              <p>
-                Change your life and learn to code at one of our campuses around
-                the world.
-              </p>
-              <button class="btn-primary">Confira</button>
+              <p>A simpler banking experience for a simpler life.</p>
+              <button class="btn-primary operations-btn">Learn more</button>
             </div>
             <div class="banner-illustration">
               <img
@@ -96,41 +96,41 @@
       <div class="container">
         <div class="counter-card">
           <div class="card-content">
-            <span class="count-number">99%</span>
+            <span class="count-number" data-target="99"></span><span>%</span>
             <p class="count-info">trusted by all users</p>
           </div>
           <div class="card-content">
-            <span class="count-number">25k</span>
+            <span class="count-number" data-target="25"></span><span>k</span>
             <p class="count-info">active users</p>
           </div>
           <div class="card-content">
-            <span class="count-number">95%</span>
+            <span class="count-number" data-target="95"></span><span>%</span>
             <p class="count-info">of assertive strategies</p>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="section-tabs reveal">
-      <div class="container">
+    <section class="section-tabs">
+      <div class="container reveal">
         <div class="tabs">
           <div class="section-title">
             <span><strong>OPERATIONS</strong></span>
             <h5>Everything as simple as possible, but no simpler.</h5>
           </div>
-          <div class="reveal">
+          <div class="">
             <div class="tabs-btns">
               <button
                 class="btn-primary btn-tab btn-tab-1 btn-tab-active"
                 data-tab="1"
               >
-                Simple Solutions
+                01 Simple Solutions
               </button>
               <button class="btn-yellow btn-tab btn-tab-2" data-tab="2">
-                Simple Solutions
+                02 Simple Solutions
               </button>
               <button class="btn-blue btn-tab btn-tab-3" data-tab="3">
-                Simple Solutions
+                03 Simple Solutions
               </button>
             </div>
             <div class="tabs-content">
@@ -195,6 +195,25 @@
             <h2>Still not sure if this is the right place for you?</h2>
             <button class="btn-primary">Contact us!</button>
           </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-footer">
+      <div class="footer container">
+        <div class="footer-links">
+          <a href="https://github.com/igorsp95" target="_blank"
+            ><i class="fab fa-github"></i
+          ></a>
+          <a
+            href="https://www.linkedin.com/in/igor-scheidegger-parente/"
+            target="_blank"
+            ><i class="fab fa-linkedin"></i
+          ></a>
+        </div>
+        <div class="footer-copyright">
+          Check my <strong>Github</strong> and <strong>Linkedin</strong> for
+          more information about me! Hope you liked it!
         </div>
       </div>
     </section>

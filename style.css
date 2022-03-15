@@ -129,6 +129,10 @@ nav {
 }
 
 nav .nav-logo {
+  cursor: pointer;
+  display: flex;
+  gap: 8px;
+  color: #525252;
   font-size: 22px;
   font-weight: bolder;
 }
@@ -195,15 +199,21 @@ nav ul li:hover {
 
 .signin-content {
   position: absolute;
+  display: flex;
+  flex-direction: column;
   transform: translateX(-150%);
   opacity: 0;
+  min-width: 60%;
   transition: all 1s ease;
 }
 
 .signup-content {
   position: absolute;
+  display: flex;
+  flex-direction: column;
   transform: translateX(150%);
   opacity: 0;
+  min-width: 60%;
   transition: all 1s ease;
 }
 
@@ -215,7 +225,7 @@ nav ul li:hover {
 
 .modal h1 {
   font-size: 44px;
-  margin: 52px 0 18px 0;
+  margin: 52px 0 0;
 }
 
 .modal form .txt_field {
@@ -254,7 +264,6 @@ nav ul li:hover {
   color: #525252;
   text-decoration: underline;
   font-size: 14px;
-  margin: 80px 0;
   transition: all 0.2s ease;
 }
 
@@ -313,8 +322,8 @@ nav ul li:hover {
 .banner h1 {
   margin: 0;
   color: #525252;
-  font-size: 32px;
-  font-weight: bold;
+  font-size: 52px;
+  font-weight: 400;
   margin-bottom: 16px;
 }
 
@@ -538,6 +547,65 @@ nav ul li:hover {
   opacity: 1;
 }
 
+@media (max-width: 1100px) {
+  .section-tabs .tabs-content {
+    padding: 80px 80px;
+  }
+}
+
+@media (max-width: 900px) {
+  .section-tabs .tabs .section-title {
+    margin-top: 80px;
+    padding: 0 80px;
+  }
+
+  .section-tabs .tabs .tabs-btns {
+    margin: 60px 0 20px 0;
+    display: flex;
+    flex-direction: column;
+    padding: 0 160px;
+  }
+
+  .section-tabs .tabs-content {
+    min-height: 180px;
+    padding: 40px 80px;
+  }
+}
+
+@media (max-width: 640px) {
+  .section-tabs .tabs .section-title {
+    margin-top: 60px;
+    padding: 0 40px;
+  }
+
+  .section-tabs .tabs .tabs-btns {
+    margin: 40px 0 20px 0;
+    padding: 0 80px;
+  }
+
+  .section-tabs .tabs-content {
+    min-height: 240px;
+    padding: 40px 40px;
+  }
+}
+
+@media (max-width: 500px) {
+  .section-tabs .tabs .section-title {
+    margin: 40px 0 0 0;
+    padding: 0;
+  }
+  .section-tabs .tabs .tabs-btns {
+    margin: 40px 0 16px 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+  }
+  .section-tabs .tabs-content {
+    padding: 20px 24px;
+    height: 340px;
+  }
+}
+
 /* //////// REVEAL  //////// */
 
 .reveal {
@@ -550,4 +618,33 @@ nav ul li:hover {
 .reveal.active {
   transform: translateY(0px);
   opacity: 1;
+}
+
+/* //////// FOOTER  //////// */
+
+.footer {
+  background: #f4f4f4;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100px;
+  padding: 0px 50px;
+  color: rgba(0, 0, 0, 0.3);
+}
+.footer-links {
+  display: flex;
+  align-items: center;
+}
+.footer-links a {
+  color: #dbdbdb;
+  text-decoration: none;
+  font-size: 24px;
+  padding: 0px 10px;
+  transition: all 0.2s ease;
+}
+.footer-links a:hover {
+  color: #e8505b;
+}
+.footer .fa-heart {
+  color: #d23333;
 }
