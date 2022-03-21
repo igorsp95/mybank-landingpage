@@ -176,20 +176,25 @@ nav ul li:hover {
   transition: 0.3s ease;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 1000px) {
   .mobile-menu {
     display: block;
   }
 
+  nav ul .btn-primary-navbar {
+    margin-top: 16px;
+  }
+
   nav .nav-list {
     position: absolute;
-    top: 8vh;
+    top: 5vh;
     right: 0;
     width: 100%;
     height: 25%;
     background-color: #ffffff;
     flex-direction: column;
     display: none;
+    padding: 40px 0 0 0;
   }
 
   nav .nav-list.active {
@@ -397,8 +402,7 @@ nav ul li:hover {
 
 .banner p {
   font-size: 20px;
-  color: #525252;
-  opacity: 0.7;
+  color: #525252b9;
   margin-bottom: 16px;
 }
 
@@ -497,7 +501,7 @@ nav ul li:hover {
 .testimonial {
   position: absolute;
   justify-content: center;
-  transition: transform 1s;
+  transition: transform 1s ease;
 }
 
 .testimonials .testimonial-title {
@@ -509,7 +513,7 @@ nav ul li:hover {
   margin-top: 24px;
   font-size: 20px;
   line-height: 1.8;
-  padding-right: 80px;
+  padding-right: 150px;
 }
 
 .testimonial-person {
@@ -625,32 +629,32 @@ nav ul li:hover {
 
 /* //////// TABS  //////// */
 
-.section-tabs {
+.sections-style {
   border-top: solid 1px rgb(180, 180, 180);
   margin: 200px 0 0 0;
 }
 
-.section-tabs .tabs .section-title {
+.sections-style .tabs .section-title {
   margin: 140px 0 0 0;
   padding: 0 150px;
 }
 
-.section-tabs .tabs .section-title h5 {
+.sections-style .tabs .section-title h5 {
   font-size: 44px;
 }
 
-.section-tabs .tabs .section-title span {
+.sections-style .tabs .section-title span {
   color: #e8505b;
 }
 
-.section-tabs .tabs .tabs-btns {
+.section-operations .tabs .tabs-btns {
   margin: 100px 0 20px 0;
   display: flex;
   gap: 16px;
   justify-content: center;
 }
 
-.section-tabs .tabs-content {
+.section-operations .tabs-content {
   background-color: #ebebeb;
   color: rgb(68, 68, 68);
   min-height: 120px;
@@ -660,85 +664,85 @@ nav ul li:hover {
   overflow: hidden;
 }
 
-.section-tabs .tabs-content span {
+.section-operations .tabs-content span {
   font-size: 24px;
   font-weight: bold;
   margin-bottom: 50px;
 }
 
-.section-tabs .tabs-content p {
+.section-operations .tabs-content p {
   font-size: 18px;
   margin-top: 16px;
   line-height: 1.6;
 }
 
-.section-tabs .tabs-content .content-tab {
+.section-operations .tabs-content .content-tab {
   position: absolute;
   transition: all 1s ease;
   width: 80%;
   transform: translateX(-80%);
   opacity: 0;
 }
-.section-tabs .tabs-content .content-active {
+.section-operations .tabs-content .content-active {
   display: block;
   transform: translateX(0);
   opacity: 1;
 }
 
 @media (max-width: 1100px) {
-  .section-tabs .tabs-content {
+  .section-operations .tabs-content {
     padding: 80px 80px;
   }
 }
 
 @media (max-width: 900px) {
-  .section-tabs .tabs .section-title {
+  .section-operations .tabs .section-title {
     margin-top: 80px;
     padding: 0 80px;
   }
 
-  .section-tabs .tabs .tabs-btns {
+  .section-operations .tabs .tabs-btns {
     margin: 60px 0 20px 0;
     display: flex;
     flex-direction: column;
     padding: 0 160px;
   }
 
-  .section-tabs .tabs-content {
+  .section-operations .tabs-content {
     min-height: 180px;
     padding: 40px 80px;
   }
 }
 
 @media (max-width: 640px) {
-  .section-tabs .tabs .section-title {
+  .section-operations .tabs .section-title {
     margin-top: 60px;
     padding: 0 40px;
   }
 
-  .section-tabs .tabs .tabs-btns {
+  .section-operations .tabs .tabs-btns {
     margin: 40px 0 20px 0;
     padding: 0 80px;
   }
 
-  .section-tabs .tabs-content {
+  .section-operations .tabs-content {
     min-height: 240px;
     padding: 40px 40px;
   }
 }
 
 @media (max-width: 500px) {
-  .section-tabs .tabs .section-title {
+  .section-operations .tabs .section-title {
     margin: 40px 0 0 0;
     padding: 0;
   }
-  .section-tabs .tabs .tabs-btns {
+  .section-operations .tabs .tabs-btns {
     margin: 40px 0 16px 0;
     padding: 0;
     display: flex;
     flex-direction: column;
   }
-  .section-tabs .tabs-content {
+  .section-operations .tabs-content {
     padding: 20px 24px;
     height: 340px;
   }

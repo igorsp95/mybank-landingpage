@@ -117,7 +117,7 @@ counters.forEach((counter) => {
 ////// SCROLL TO ///////
 
 const scrollToOperations = document.querySelectorAll(".operations-btn");
-const sectionTabs = document.querySelector(".section-tabs");
+const sectionTabs = document.querySelector(".section-operations");
 
 console.log(scrollToOperations);
 
@@ -132,6 +132,14 @@ const sectionContact = document.querySelector(".section-contact");
 
 scrollToContact.addEventListener("click", () => {
   sectionContact.scrollIntoView({ behavior: "smooth" });
+  console.log("click");
+});
+
+const scrollToClients = document.querySelector(".ourclients-btn");
+const sectionClients = document.querySelector(".section-clients");
+
+scrollToClients.addEventListener("click", () => {
+  sectionClients.scrollIntoView({ behavior: "smooth" });
   console.log("click");
 });
 
@@ -151,4 +159,35 @@ const testimonials = document.querySelectorAll(".testimonial");
 const btnLeft = document.querySelector(".slider__btn--left");
 const btnRight = document.querySelector(".slider__btn--right");
 
-testimonials.forEach((s, i) => (s.style.transform = `translateX(${100 * i}%)`));
+let curSlide = 0;
+const maxSlide = testimonials.length;
+
+const goToSlide = function (slide) {
+  testimonials.forEach(
+    (s, i) => (s.style.transform = `translateX(${100 * (i - slide)}%)`)
+  );
+};
+
+goToSlide(0);
+
+const nextSlide = function () {
+  if (curSlide === maxSlide - 1) {
+    curSlide = 0;
+  } else {
+    curSlide++;
+  }
+
+  goToSlide(curSlide);
+};
+
+const prevSlide = function () {
+  if (curSlide === 0) {
+    curSlide = maxSlide - 1;
+  } else {
+    curSlide--;
+  }
+  goToSlide(curSlide);
+};
+
+btnRight.addEventListener("click", nextSlide);
+btnLeft.addEventListener("click", prevSlide);
