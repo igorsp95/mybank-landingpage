@@ -134,3 +134,21 @@ scrollToContact.addEventListener("click", () => {
   sectionContact.scrollIntoView({ behavior: "smooth" });
   console.log("click");
 });
+
+////// NAV MOBILE BUTTON ///////
+
+const mobileBtn = document.querySelector(".mobile-menu");
+const navList = document.querySelector(".nav-list");
+
+mobileBtn.addEventListener("click", () => {
+  navList.classList.toggle("active");
+  mobileBtn.classList.toggle("active");
+});
+
+////// TESTIMONIAL SLIDER ///////
+
+const testimonials = document.querySelectorAll(".testimonial");
+const btnLeft = document.querySelector(".slider__btn--left");
+const btnRight = document.querySelector(".slider__btn--right");
+
+testimonials.forEach((s, i) => (s.style.transform = `translateX(${100 * i}%)`));
