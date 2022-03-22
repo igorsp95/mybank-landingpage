@@ -8,7 +8,6 @@ btnsContainer.addEventListener("click", (e) => {
   const clicked = e.target.closest(".btn-tab");
 
   if (!clicked) return;
-  console.log(clicked);
 
   tabBtns.forEach((btn) => btn.classList.remove("btn-tab-active"));
   contents.forEach((content) => content.classList.remove("content-active"));
@@ -119,8 +118,6 @@ counters.forEach((counter) => {
 const scrollToOperations = document.querySelectorAll(".operations-btn");
 const sectionTabs = document.querySelector(".section-operations");
 
-console.log(scrollToOperations);
-
 scrollToOperations.forEach((sto) =>
   sto.addEventListener("click", () => {
     sectionTabs.scrollIntoView({ behavior: "smooth" });
@@ -132,7 +129,6 @@ const sectionContact = document.querySelector(".section-contact");
 
 scrollToContact.addEventListener("click", () => {
   sectionContact.scrollIntoView({ behavior: "smooth" });
-  console.log("click");
 });
 
 const scrollToClients = document.querySelector(".ourclients-btn");
@@ -156,8 +152,8 @@ mobileBtn.addEventListener("click", () => {
 ////// TESTIMONIAL SLIDER ///////
 
 const testimonials = document.querySelectorAll(".testimonial");
-const btnLeft = document.querySelector(".slider__btn--left");
-const btnRight = document.querySelector(".slider__btn--right");
+const btnLeft = document.querySelector(".slider-btn--left");
+const btnRight = document.querySelector(".slider-btn--right");
 
 let curSlide = 0;
 const maxSlide = testimonials.length;
@@ -191,3 +187,8 @@ const prevSlide = function () {
 
 btnRight.addEventListener("click", nextSlide);
 btnLeft.addEventListener("click", prevSlide);
+
+document.addEventListener("keydown", (e) => {
+  if (e.key === "ArrowLeft") prevSlide();
+  e.key === "ArrowRight" && nextSlide();
+});

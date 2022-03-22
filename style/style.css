@@ -1,0 +1,17 @@
+/* //////// FONTS //////// */
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;700&family=Roboto:wght@300;400;700&display=swap");
+
+/* //////// COMPONENTS //////// */
+
+@import url(./components/global.css);
+@import url(./components/button.css);
+@import url(./components/navbar.css);
+@import url(./components/modal.css);
+@import url(./components/banner.css);
+@import url(./components/counter.css);
+@import url(./components/testimonial.css);
+@import url(./components/contact.css);
+@import url(./components/tab.css);
+@import url(./components/reveal.css);
+@import url(./components/footer.css);
